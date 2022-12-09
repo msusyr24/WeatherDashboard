@@ -57,7 +57,7 @@ document.getElementById("input")
     console.log(citySearch)
 
     
-    fetch("http://api.openweathermap.org/data/2.5/forecast?appid=a6a3eda3ece3b97485d3f0cf27695443&q="+citySearch)
+    fetch("https://api.openweathermap.org/data/2.5/forecast?appid=a6a3eda3ece3b97485d3f0cf27695443&q="+citySearch)
     .then(function (response){
             block1.textContent =""
             fiveDayForecastText.textContent =""
@@ -290,7 +290,7 @@ document.getElementById("input")
 function historicSearch(){
     citySearch = buttonValue
     console.log(citySearch)
-    fetch("http://api.openweathermap.org/data/2.5/forecast?appid=a6a3eda3ece3b97485d3f0cf27695443&q="+citySearch)
+    fetch("https://api.openweathermap.org/data/2.5/forecast?appid=a6a3eda3ece3b97485d3f0cf27695443&q="+citySearch)
     .then(function (response){
             block1.textContent =""
             fiveDayForecastText.textContent =""
