@@ -1,0 +1,56 @@
+:root{
+    --coolBlue: rgb(58, 58, 188);
+}
+
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+    background-color: transparent!important;
+}
+
+#top{
+    background-color: var(--coolBlue);
+    text-align: center;
+    text-decoration: solid;
+    padding: 20px;
+    color: white;
+}
+
+#container{
+    display: flex;
+    display: row;
+    
+}
+
+#left-panel{
+    flex: 0 0 20%;
+    padding: 10px;
+    
+}
+
+#right-panel{
+    flex: 0 0 70%;
+    padding: 10px;
+}
+
+#currentWeather{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#button{
+    background-color: var(--coolBlue) !important;
+
+}
+
+#input{
+    height: 40px !important;
+}
