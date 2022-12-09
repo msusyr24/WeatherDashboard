@@ -11,6 +11,7 @@ var block5 = document.createElement("h4")
 var citySearch;
 var buttonValue;
 var blockTime;
+var loadBTN;
 
 const localStorageContent = localStorage.getItem('savedSearches')
 var savedSearches;
@@ -24,20 +25,21 @@ loadHistory()
 
 function loadHistory(){
     for(i=0; i<savedSearches.length;i++){
-        var loadBTN = document.createElement("button")
+        loadBTN = document.createElement("button")
         leftPanelEl.append(loadBTN)
         loadBTN.style="height: 35px; width: 100%; background-color: gray; color: white; margin-top: 10px; border-radius:5px; border: none;"
         loadBTN.textContent=savedSearches[i]
         loadBTN.value=savedSearches[i]
+        loadBTN.id="leftAddedButton"
         loadBTN.addEventListener("click", function(event){
             event.preventDefault()
             buttonValue = this.value;
             historicSearch()
         })
+        
     }
 }
 
-   
 //hits search button if "enter" is clicked while in the input field
 document.getElementById("input")
     .addEventListener("keyup", function(event) {
