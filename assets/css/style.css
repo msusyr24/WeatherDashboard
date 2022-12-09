@@ -12,10 +12,6 @@
   
 }
 
-body {
-    background-color: transparent!important;
-}
-
 #top{
     background-color: var(--coolBlue);
     text-align: center;
@@ -37,7 +33,7 @@ body {
 }
 
 #right-panel{
-    flex: 0 0 70%;
+    flex: 0 1 70%;
     padding: 10px;
 }
 
@@ -48,7 +44,7 @@ body {
 
 #button{
     background-color: var(--coolBlue) !important;
-
+    border: none !important;
 }
 
 #input{

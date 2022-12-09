@@ -32,7 +32,6 @@ function loadHistory(){
         loadBTN.addEventListener("click", function(event){
             event.preventDefault()
             buttonValue = this.value;
-            console.log(this.value)
             historicSearch()
         })
     }
@@ -47,15 +46,12 @@ document.getElementById("input")
         document.getElementById("button").click();
     }
     });
-   
 
     var BTN = document.getElementById("button")
     var citySearching = BTN.addEventListener("click", function (event) {
     event.preventDefault();
     citySearch = document.getElementById("input").value
     document.getElementById("input").value=""
-    console.log(citySearch)
-
     
     fetch("https://api.openweathermap.org/data/2.5/forecast?appid=a6a3eda3ece3b97485d3f0cf27695443&q="+citySearch)
     .then(function (response){
@@ -65,7 +61,6 @@ document.getElementById("input")
             })
             .then(function (data){
                              
-                console.log(data)
                 var today = new Date();
                 var dd = String(today.getDate()).padStart(2, '0');
                 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -121,7 +116,6 @@ document.getElementById("input")
                 } else if(currentTime==21){
                     blockTime=6
                 }
-                console.log(blockTime)
                 var block1Date = data.list[blockTime].dt_txt
                 var block1Mo = block1Date.slice(5,7)
                 var block1Da = block1Date.slice(8,10)
@@ -148,7 +142,6 @@ document.getElementById("input")
 
                 createBottomContainer.append(block2)
                 blockTime = blockTime+8
-                console.log(blockTime)
                 var block2Date = data.list[blockTime].dt_txt
                 var block2Mo = block2Date.slice(5,7)
                 var block2Da = block2Date.slice(8,10)
@@ -174,7 +167,6 @@ document.getElementById("input")
 
 
                 blockTime = blockTime+8
-                console.log(blockTime)
                 createBottomContainer.append(block3)
                 var block3Date = data.list[blockTime].dt_txt
                 var block3Mo = block3Date.slice(5,7)
@@ -202,7 +194,6 @@ document.getElementById("input")
 
 
                 blockTime = blockTime+8
-                console.log(blockTime)
                 createBottomContainer.append(block4)
                 var block4Date = data.list[blockTime].dt_txt
                 var block4Mo = block4Date.slice(5,7)
@@ -254,8 +245,6 @@ document.getElementById("input")
                 block5Humidity.textContent = "Humidity: "+data.list[39].main.humidity+" %"
         
                 var currentCityName = data.city.name
-                console.log(currentCityName)
-                console.log(savedSearches)
                 if(savedSearches.indexOf(currentCityName) == -1){
                     var newBTN = document.createElement("button")
                     var newDiv = document.createElement("div")
@@ -264,18 +253,15 @@ document.getElementById("input")
                     newDiv.append(newBTN)
                     newBTN.style="width: 100%; background-color: gray; color: white; margin-top: 10px; border-radius:5px; padding: 5px 0px; border: none;"
                     newBTN.textContent=data.city.name
-                    console.log(data.city.name)
                     newBTN.value=data.city.name
                     newBTN.addEventListener("click", function(event){
                     event.preventDefault()
                     buttonValue = newBTN.value;
-                    console.log(buttonValue)
                     historicSearch()
         })
                     }
                 
                 if(savedSearches.indexOf(currentCityName) == -1){
-                    console.log("not in there, so adding")
                     savedSearches.push(currentCityName);
                     localStorage.setItem('savedSearches', JSON.stringify(savedSearches)); 
                     }
@@ -289,7 +275,6 @@ document.getElementById("input")
 
 function historicSearch(){
     citySearch = buttonValue
-    console.log(citySearch)
     fetch("https://api.openweathermap.org/data/2.5/forecast?appid=a6a3eda3ece3b97485d3f0cf27695443&q="+citySearch)
     .then(function (response){
             block1.textContent =""
@@ -297,8 +282,6 @@ function historicSearch(){
             return response.json();
             })
             .then(function (data){
-                             
-                console.log(data)
                 var today = new Date();
                 var dd = String(today.getDate()).padStart(2, '0');
                 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -354,7 +337,6 @@ function historicSearch(){
                 } else if(currentTime==21){
                     blockTime=6
                 }
-                console.log(blockTime)
                 var block1Date = data.list[blockTime].dt_txt
                 var block1Mo = block1Date.slice(5,7)
                 var block1Da = block1Date.slice(8,10)
@@ -381,7 +363,6 @@ function historicSearch(){
 
                 createBottomContainer.append(block2)
                 blockTime = blockTime+8
-                console.log(blockTime)
                 var block2Date = data.list[blockTime].dt_txt
                 var block2Mo = block2Date.slice(5,7)
                 var block2Da = block2Date.slice(8,10)
@@ -407,7 +388,6 @@ function historicSearch(){
 
 
                 blockTime = blockTime+8
-                console.log(blockTime)
                 createBottomContainer.append(block3)
                 var block3Date = data.list[blockTime].dt_txt
                 var block3Mo = block3Date.slice(5,7)
