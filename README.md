@@ -8,7 +8,8 @@ Screenshot with the page loaded and no searches made yet:
 Screenshot with a search completed and the city added to history on the left:
 <img src="https://github.com/msusyr24/WeatherDashboard/blob/85eaa59e40ba88765e62f4e4911f2f8fa7f986b5/assets/images/searched.png">
 
-Link to Deployed Application
+Link to Deployed Application:
+https://msusyr24.github.io/WeatherDashboard/
 
 
 MIT License
