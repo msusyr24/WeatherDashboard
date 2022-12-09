@@ -3,10 +3,10 @@
 Project Description: A weather dashboard that runsn in the browser and features dynamically updated HTML and CSS. The data is pulled from the openweathermap.org API.
 
 Screenshot with the page loaded and no searches made yet:
-<img src="">
+<img src="https://github.com/msusyr24/WeatherDashboard/blob/85eaa59e40ba88765e62f4e4911f2f8fa7f986b5/assets/images/loaded.png">
 
 Screenshot with a search completed and the city added to history on the left:
-<img src="">
+<img src="https://github.com/msusyr24/WeatherDashboard/blob/85eaa59e40ba88765e62f4e4911f2f8fa7f986b5/assets/images/searched.png">
 
 Link to Deployed Application
 
