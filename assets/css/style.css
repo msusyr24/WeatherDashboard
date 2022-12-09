@@ -47,6 +47,10 @@
     border: none !important;
 }
 
+#button:hover{
+    background-color: rgb(28, 173, 183) !important;
+}
+
 #input{
     height: 40px !important;
 }
