@@ -415,7 +415,6 @@ function historicSearch(){
 
 
                 blockTime = blockTime+8
-                console.log(blockTime)
                 createBottomContainer.append(block4)
                 var block4Date = data.list[blockTime].dt_txt
                 var block4Mo = block4Date.slice(5,7)
