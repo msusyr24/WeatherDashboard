@@ -69,7 +69,7 @@ document.getElementById("input")
                 currentCityDisplayEl.textContent = data.city.name + " " + today
                 currentCityDisplayEl.style = "font-weight: bold;"
                 var weatherGraphic = document.createElement("img")
-                weatherGraphic.src = "http://openweathermap.org/img/wn/"+data.list[0].weather[0].icon+"@2x.png"
+                weatherGraphic.src = "https://openweathermap.org/img/wn/"+data.list[0].weather[0].icon+"@2x.png"
                 currentCityDisplayEl.append(weatherGraphic)
                 var tempEl = document.createElement("h4");
                 currentCityDisplayEl.appendChild(tempEl)
@@ -122,7 +122,7 @@ document.getElementById("input")
                 var block1Yr = block1Date.slice(0,4)
                 block1.textContent=block1Mo+"/"+block1Da+"/"+block1Yr
                 var weatherGraphicBlock1 = document.createElement("img")
-                weatherGraphicBlock1.src = "http://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
+                weatherGraphicBlock1.src = "https://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
                 weatherGraphicBlock1.style="display: block;"
                 block1.append(weatherGraphicBlock1)
                 var block1Temp = document.createElement("h4")
@@ -148,7 +148,7 @@ document.getElementById("input")
                 var block2Yr = block2Date.slice(0,4)
                 block2.textContent=block2Mo+"/"+block2Da+"/"+block2Yr
                 var weatherGraphicBlock2 = document.createElement("img")
-                weatherGraphicBlock2.src = "http://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
+                weatherGraphicBlock2.src = "https://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
                 weatherGraphicBlock2.style="display: block;"
                 block2.append(weatherGraphicBlock2)
                 var block2Temp = document.createElement("h4")
@@ -174,7 +174,7 @@ document.getElementById("input")
                 var block3Yr = block3Date.slice(0,4)
                 block3.textContent=block3Mo+"/"+block3Da+"/"+block3Yr
                 var weatherGraphicBlock3 = document.createElement("img")
-                weatherGraphicBlock3.src = "http://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
+                weatherGraphicBlock3.src = "https://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
                 weatherGraphicBlock3.style="display: block;"
                 block3.append(weatherGraphicBlock3)
                 var block3Temp = document.createElement("h4")
@@ -201,7 +201,7 @@ document.getElementById("input")
                 var block4Yr = block4Date.slice(0,4)
                 block4.textContent=block4Mo+"/"+block4Da+"/"+block4Yr
                 var weatherGraphicBlock4 = document.createElement("img")
-                weatherGraphicBlock4.src = "http://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
+                weatherGraphicBlock4.src = "https://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
                 weatherGraphicBlock4.style="display: block;"
                 block4.append(weatherGraphicBlock4)
                 var block4Temp = document.createElement("h4")
@@ -227,7 +227,7 @@ document.getElementById("input")
                 var block5Yr = block5Date.slice(0,4)
                 block5.textContent=block5Mo+"/"+block5Da+"/"+block5Yr
                 var weatherGraphicBlock5 = document.createElement("img")
-                weatherGraphicBlock5.src = "http://openweathermap.org/img/wn/"+data.list[39].weather[0].icon+"@2x.png"
+                weatherGraphicBlock5.src = "https://openweathermap.org/img/wn/"+data.list[39].weather[0].icon+"@2x.png"
                 weatherGraphicBlock5.style="display: block;"
                 block5.append(weatherGraphicBlock5)
                 var block5Temp = document.createElement("h4")
@@ -290,7 +290,7 @@ function historicSearch(){
                 currentCityDisplayEl.textContent = data.city.name + " " + today
                 currentCityDisplayEl.style = "font-weight: bold;"
                 var weatherGraphic = document.createElement("img")
-                weatherGraphic.src = "http://openweathermap.org/img/wn/"+data.list[0].weather[0].icon+"@2x.png"
+                weatherGraphic.src = "https://openweathermap.org/img/wn/"+data.list[0].weather[0].icon+"@2x.png"
                 currentCityDisplayEl.append(weatherGraphic)
                 var tempEl = document.createElement("h4");
                 currentCityDisplayEl.appendChild(tempEl)
@@ -343,7 +343,7 @@ function historicSearch(){
                 var block1Yr = block1Date.slice(0,4)
                 block1.textContent=block1Mo+"/"+block1Da+"/"+block1Yr
                 var weatherGraphicBlock1 = document.createElement("img")
-                weatherGraphicBlock1.src = "http://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
+                weatherGraphicBlock1.src = "https://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
                 weatherGraphicBlock1.style="display: block;"
                 block1.append(weatherGraphicBlock1)
                 var block1Temp = document.createElement("h4")
@@ -369,7 +369,7 @@ function historicSearch(){
                 var block2Yr = block2Date.slice(0,4)
                 block2.textContent=block2Mo+"/"+block2Da+"/"+block2Yr
                 var weatherGraphicBlock2 = document.createElement("img")
-                weatherGraphicBlock2.src = "http://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
+                weatherGraphicBlock2.src = "https://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
                 weatherGraphicBlock2.style="display: block;"
                 block2.append(weatherGraphicBlock2)
                 var block2Temp = document.createElement("h4")
@@ -395,7 +395,7 @@ function historicSearch(){
                 var block3Yr = block3Date.slice(0,4)
                 block3.textContent=block3Mo+"/"+block3Da+"/"+block3Yr
                 var weatherGraphicBlock3 = document.createElement("img")
-                weatherGraphicBlock3.src = "http://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
+                weatherGraphicBlock3.src = "https://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
                 weatherGraphicBlock3.style="display: block;"
                 block3.append(weatherGraphicBlock3)
                 var block3Temp = document.createElement("h4")
@@ -423,7 +423,7 @@ function historicSearch(){
                 var block4Yr = block4Date.slice(0,4)
                 block4.textContent=block4Mo+"/"+block4Da+"/"+block4Yr
                 var weatherGraphicBlock4 = document.createElement("img")
-                weatherGraphicBlock4.src = "http://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
+                weatherGraphicBlock4.src = "https://openweathermap.org/img/wn/"+data.list[blockTime].weather[0].icon+"@2x.png"
                 weatherGraphicBlock4.style="display: block;"
                 block4.append(weatherGraphicBlock4)
                 var block4Temp = document.createElement("h4")
@@ -449,7 +449,7 @@ function historicSearch(){
                 var block5Yr = block5Date.slice(0,4)
                 block5.textContent=block5Mo+"/"+block5Da+"/"+block5Yr
                 var weatherGraphicBlock5 = document.createElement("img")
-                weatherGraphicBlock5.src = "http://openweathermap.org/img/wn/"+data.list[39].weather[0].icon+"@2x.png"
+                weatherGraphicBlock5.src = "https://openweathermap.org/img/wn/"+data.list[39].weather[0].icon+"@2x.png"
                 weatherGraphicBlock5.style="display: block;"
                 block5.append(weatherGraphicBlock5)
                 var block5Temp = document.createElement("h4")
