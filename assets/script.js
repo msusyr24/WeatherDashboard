@@ -328,15 +328,15 @@ function historicSearch(){
 
                 createBottomContainer.append(block1)
                 if(currentTime==0){
-                    blockTime=13
+                    blockTime=5
                 } else if(currentTime==3){
-                    blockTime=12
+                    blockTime=4
                 } else if(currentTime==6){
-                    blockTime=11
+                    blockTime=3
                 } else if(currentTime==9){
-                    blockTime=10
+                    blockTime=2
                 } else if(currentTime==12){
-                    blockTime=9
+                    blockTime=1
                 } else if(currentTime==15){
                     blockTime=8
                 } else if(currentTime==18){
