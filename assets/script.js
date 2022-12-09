@@ -257,6 +257,7 @@ document.getElementById("input")
                     leftPanelEl.append(newDiv)
                     newDiv.append(newBTN)
                     newBTN.style="width: 100%; background-color: gray; color: white; margin-top: 10px; border-radius:5px; padding: 5px 0px; border: none;"
+                    newBTN.id="leftAddedButton2"
                     newBTN.textContent=data.city.name
                     newBTN.value=data.city.name
                     newBTN.addEventListener("click", function(event){
