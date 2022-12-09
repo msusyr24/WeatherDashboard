@@ -51,6 +51,9 @@ document.getElementById("input")
     var citySearching = BTN.addEventListener("click", function (event) {
     event.preventDefault();
     citySearch = document.getElementById("input").value
+    if(citySearch==""){
+        return
+    }
     document.getElementById("input").value=""
     
     fetch("https://api.openweathermap.org/data/2.5/forecast?appid=a6a3eda3ece3b97485d3f0cf27695443&q="+citySearch)
